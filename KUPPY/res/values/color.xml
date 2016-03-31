@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="seek_bg">#969696</color>
+    <color name="red">#FF0000</color>
+    <color name="blue">#0000ff</color>
+    <color name="dark">#4B4B4B</color>
+    <color name="blue_light">#66FFFF</color>
+    <color name="green">#00a13d</color>
+	<color name="grey">#cacccc</color>
+</resources>

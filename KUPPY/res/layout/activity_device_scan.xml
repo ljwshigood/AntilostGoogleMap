@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_main"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin" >
+
+    <include
+        android:id="@+id/include_head"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        layout="@layout/item_head" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/ll_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/scanning" />
+
+            <TextView
+                android:id="@+id/tv_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/find_device_info"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/txt_size_20"
+                android:visibility="visible" >
+            </TextView>
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/lv_scan_device"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@drawable/ic_divider"
+            android:listSelector="@drawable/ic_linear_selector"
+            android:visibility="gone" >
+        </ListView>
+    </LinearLayout>
+
+</LinearLayout>
